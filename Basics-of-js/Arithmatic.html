@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmatic</title>
+</head>
+<body>
+    <script>
+        //primitive datatypes
+         
+         
+         var dateOfBirth=2000;
+         var dateOfBirth=2005;
+        // let age="22";
+        let number=22;
+        
+        
+        console.log(typeof number);
+        
+        let marriedStatus = false;
+        console.log(typeof marriedStatus);
+         
+        let address = null;
+        console.log(typeof address);
+
+        let mobile;
+        console.log(typeof mobile);
+
+        let aadharcard = BigInt(587912345678);
+        console.log(typeof aadharcard);
+
+        let phone = Symbol(789987);//
+        console.log(typeof phone);
+
+         //non primitive  datatypes
+         //array datatype
+
+          let studentsName=["rakesh","rahul","ravi",0,5995,5995];
+          console.log(typeof studentsName);
+         
+          let array=["shalu","geeta","meena"];
+          console.log( array);
+
+          let array2 = new Array("seeta","geeta","Ram");
+          console.log(typeof array2);
+
+          //object dtatype
+          let profile ={name:"virat Kohli",age:36,marriedStatus:true};
+          console.log(profile);
+
+          let profile1={name:"virat kohli",age:36,marriedStatus:true,homeaddresses:{parentHouse: "b-12 56-newdelhi",livingHouse:"5768 banglore"},havingmobiles:["iphone16","iphone5"]};
+          console.log(profile1);
+
+          let allStudents=[profile,profile1];
+          console.log(typeof allStudents);
+
+          //operators in javascript
+          //+,-,%,--,++,**
+           let age=22;
+          // console.log(age++);
+          // console.log(age++);
+          
+           //let ageInc=age++;//post increment value 22
+           //console.log(ageInc);
+
+           let ageInc=++age;//pre increment value 23
+           console.log(ageInc);
+ 
+           //let ageDec = age--;//post decrement value 23
+           //console.log(ageDec);
+            let ageDec=--age;
+            console.log(ageDec);
+            
+            //assignment operator    =,==,===,<,>,<=,>=,&&,||
+            let email="rathorchanchal695@gmail.com"   //assign value
+
+            let num1=45;
+            let num2=55;
+            let num3="55";
+            console.log(num1 == num2); // it will check only value. its equal or not==
+            console.log(num2===num3); //  it will check value along with data type===
+            console.log(4<=4);//true
+            console.log(8>=0);//greater than or equal
+            console.log(5!=5);//false not equal
+            console.log(true===false);//data type is same but value is not equal output is fale 1!0
+
+            console.log(false===false);//data type is same and value is same output return true 0===0
+            console.log(false=="false")//false
+            console.log(false==0)//true
+            console.log(false===0)//false datatype is not same
+            console.log(true==1)//true
+            console.log(false)
+             
+            let name="rahul";
+            let name1="rahul"
+            console.log(name===name1);//true
+             
+            // console.log(name===name1&& 4===4)//true
+            console.log(name===name1&& 4===5)//false both condition has to be true
+
+            //OR operator
+            console.log(name === name1 || 4===5)//true
+
+            console.log(!true===false)//true
+
+            console.log(!true===0)//false
+
+            console.log(!true==0);//true
+                   
+            console.log(true==!0)//true     
+    </script>
+</body>
+</html>

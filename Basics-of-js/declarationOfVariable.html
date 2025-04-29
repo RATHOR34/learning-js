@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+           //Variables declared with let have Block Scope
+          //Variables declared with let must be Declared before use
+         //Variables declared with let cannot be Redeclared in the same scope
+        //let and const these two keywords are block 
+       //Variables declared inside a { } block cannot be accessed from outside the block:       
+       //let keyword
+           let y= 5 // Cannot be Redeclared y show error  let y= 7 but update and reasign
+           {
+            let x = 10;
+            console.log(y) // y can NOT be used here
+           }
+          // console.log(x)
+       //const keyword
+       const sname=["chanchal","shalu","meena"]
+      // const sname=["rahul"] //Variables defined with const cannot be Redeclared     
+      // sname=["chanchal","shalu","meena","code" ]  //Variables defined with const cannot be Reassigned
+       console.log(sname)
+      {
+        const  fname=["rathor","sahu"]
+        console.log(fname)
+        console.log(sname)
+        //can not use sname //Variables defined with const have Block Scope
+      }
+       
+    </script>
+</body>
+</html>

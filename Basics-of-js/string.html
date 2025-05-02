@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let string1 = "CHANCHAL"
+        let string2 = "chanchal"
+        let string3 = 'chanchal'
+        let string4 = `      chanchal rathor          `
+        let message = "hello my name is chanchal my"
+        console.log(string4.length)
+        console.log(string4.trim())  // removing empty space from both side
+        console.log(string4.trimEnd())  //trimStart  and trimEnd
+        console.log(string4.includes("cha"))    //it will check that value is existing or not, and return true or false
+        console.log(string4.replace("cha", "aa"))
+        console.log(message.replaceAll("my","hello"))
+
+        let sliceValue = message.slice(0,7)
+        console.log(sliceValue)
+        console.log(message.substring(0, 7))        //it can take negative index also
+       
+        let nameUppercase = message.toUpperCase()
+        console.log(nameUppercase)
+       
+        let nameLowercase = string1.toLowerCase()
+        console.log(nameLowercase)
+
+        let charAt = string1.charAt(5) //at index 5 you will get the character
+        console.log(charAt)
+
+         let name = "prashant"
+        console.log(name.indexOf("T"))     //you will get index number of given character
+ 
+         let email = 'chanchal@gmail.com'
+         let splitArray = email.split()   //convert string to array based on given character
+         console.log(splitArray)
+         
+         let fruits = ["mango","banana","grapes","stawberry"]
+         console.log(fruits.join(" "))              //conver array to a string
+         
+         let sname = "rahul,mohan,monu,anshul,"
+         console.log(sname.split(",").join("kumar "))
+</script>
+</body>
+</html>

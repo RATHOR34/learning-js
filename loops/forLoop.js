@@ -28,3 +28,26 @@ for(let i = 100; i >= 1; i-- )
 {
    console.log(i)
 }
+
+let names = ["rahul","chanchal","shanu","ajay","shila","kanu"]
+// for(let i = 0; i < names.length; i++){
+//         if(names[i] === "ajay"){
+//         console.log("ajay kumar")
+//     } else {
+//           console.log(names[i])
+//        }
+
+//   }
+
+//continue property     
+console.log(names.length)                            //to skip current task while running loop
+for(let i = 0; i < names.length; i++){
+
+    if(names[i] === "ajay"){
+       continue;
+    } else {
+       console.log(names[i])
+    }
+}
+console.log(names.length)
+

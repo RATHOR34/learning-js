@@ -19,11 +19,11 @@ console.log(array);
 
 array.unshift("chayan","chirag");
 
-let teamMember = ["yash","kanha","rahul","Ritika"];   //slice(initialize, before the index) //you can take only the values from the array// key point:   it will give you new value
-// let team = teamMember.slice(1,2)
-// console.log(team);
+let teamMember = ["yash","kanha","rahul","Ritika","vcvcb","hjhjkk"];   //slice(initialize, before the index) //you can take only the values from the array// key point:   it will give you new value
+let team = teamMember.slice(1,5)
+  console.log(team);
 
 //splice       splice(startingIndex, how many value you want to remove,   adding new values)
 // key point:  it will change your original array 
-teamMember.splice(2,3);
+teamMember.splice(2,3,"hhhhh");
 console.log(teamMember);

@@ -7,11 +7,12 @@
 </head>
 <body>
     <script>
-        let string = "hello"
-        for(let i=4;i>=0;i--){
-            console.log(string[i])
+        let string = prompt("give a string")
+        let reverseString="";
+        for(let i = string.length-1 ; i>=0;i--){
+            reverseString += (string[i])
         }
-        
+        console.log(reverseString)
     </script>
 </body>
 </html>

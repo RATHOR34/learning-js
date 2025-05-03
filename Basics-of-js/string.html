@@ -36,14 +36,23 @@
         console.log(name.indexOf("T"))     //you will get index number of given character
  
          let email = 'chanchal@gmail.com'
-         let splitArray = email.split()   //convert string to array based on given character
+         let splitArray = email.split("")   //convert string to array based on given character
          console.log(splitArray)
          
          let fruits = ["mango","banana","grapes","stawberry"]
-         console.log(fruits.join(" "))              //conver array to a string
+         console.log(fruits.join(","))  
+                     //conver array to a string
          
-         let sname = "rahul,mohan,monu,anshul,"
+         let sname = "rahul,mohan,monu,anshul"
          console.log(sname.split(",").join("kumar "))
+
+         let splitString = sname.split(",")
+         let joinString = splitString.join("-kumar ")
+         let lastValue = splitString.slice(splitString.length-1).concat("kumar");
+         let lname =  lastValue.join("") 
+         console.log(joinString)
+         console.log(joinString.replace("anshul",lname))
+
 </script>
 </body>
 </html>

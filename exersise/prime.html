@@ -7,12 +7,14 @@
 </head>
 <body>
     <script> 
-      let num =8;
-      if(num%2==0){
-        console.log("true")
-      }
-      else{
-        console.log("not prime")
+       let num = prompt("give a number")
+       for(let i = num-1; i>=2; i--){
+        if(num % i === 0){
+          console.log (true)
+        }
+       else if(num % i !== 0){
+          console.log (false)
+        }
       }
     </script>
 </body>

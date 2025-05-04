@@ -44,12 +44,16 @@
                      //conver array to a string
          
          let sname = "rahul,mohan,monu,anshul"
-         console.log(sname.split(",").join("kumar "))
+        //  console.log(sname.split(",").join("kumar "))
 
          let splitString = sname.split(",")
+         console.log(splitString)
          let joinString = splitString.join("-kumar ")
+         console.log(joinString)
          let lastValue = splitString.slice(splitString.length-1).concat("kumar");
-         let lname =  lastValue.join("") 
+         console.log(lastValue)
+         let lname =  lastValue.join("-") 
+         console.log(lname)
          console.log(joinString)
          console.log(joinString.replace("anshul",lname))
 

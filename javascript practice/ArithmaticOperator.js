@@ -38,7 +38,7 @@ num %= 5   // Remainder Assignment Operator
 // ternary operator in js
 //  let message = condition ? value for true : value for false;
 let age = 18    
-let message = (age>18) ?"Yes" : "No"
+let message = (age>18) ?true : false
 console.log(message)
 
 console.log(5 != 5) //false

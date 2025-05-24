@@ -1,4 +1,4 @@
-import {div,multiply,sub,add} from "./math.js"
+import {add,sub,multiply,div} from "./math.js"
 
 console.log(add(4,5))
 console.log(div(4,5))

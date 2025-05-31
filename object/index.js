@@ -20,7 +20,7 @@ profile.married = false
 console.log(profile)
 
 console.log( delete profile.married +"hhh")       //you can delete property using delete keyword
-console.log(delete profile)
+ 
 console.log(profile)
 // for in loop in .. in object
 

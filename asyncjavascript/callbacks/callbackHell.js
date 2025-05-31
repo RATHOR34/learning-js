@@ -1,52 +1,52 @@
-// function loginUser(callBack) {
-//     setTimeout(() => {
-//         console.log("user has logged in")
-//         callBack()
-//     }, 1000)
+function loginUser(callBack) {
+    setTimeout(() => {
+        console.log("user has logged in")
+        callBack()
+    }, 1000)
 
-// }
+}
 
-// function fetchUser(callBack) {
+function fetchUser(callBack) {
      
-//     setTimeout(() => {
-//         console.log("data is fetched")
-//          callBack()
-//     }, 1000);
+    setTimeout(() => {
+        console.log("data is fetched")
+         callBack()
+    }, 1000);
 
-// }
+}
 
-// function updateUI(callBack) {
+function updateUI(callBack) {
 
-//     setTimeout(() => {
-//         console.log("ui has been update")
-//         callBack()
-//     }, 1000);
+    setTimeout(() => {
+        console.log("ui has been update")
+        callBack()
+    }, 1000);
 
-// }
+}
 
-// function sendEmail(callBack) {
+function sendEmail(callBack) {
 
-//     setTimeout(() => {
-//         console.log("email has sent")
-//         callBack()
-//     }, 1000);
-// }
+    setTimeout(() => {
+        console.log("email has sent")
+        callBack()
+    }, 1000);
+}
 
-// // CALLBACK HELL:-----
+// CALLBACK HELL:-----
 
-// // note: callback hell is a situation in javascript where deeply nested callback functions
-// // make code difficult to read, understand, and maintain.This often occurs when handling 
-// // asynchronous operations where one operation's completion depends on the result of another
+// note: callback hell is a situation in javascript where deeply nested callback functions
+// make code difficult to read, understand, and maintain.This often occurs when handling 
+// asynchronous operations where one operation's completion depends on the result of another
 
-// loginUser(() => {
-//     fetchUser(() => {
-//         updateUI(() => {
-//             sendEmail(() => {
-//                 console.log("all task has been completed")
-//             })
-//         })
-//     })
-// })
+loginUser(() => {
+    fetchUser(() => {
+        updateUI(() => {
+            sendEmail(() => {
+                console.log("all task has been completed")
+            })
+        })
+    })
+})
  
 // ----------------------------------async task with promise (to avoid call back hell)-------------------------------
 

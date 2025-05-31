@@ -1,0 +1,49 @@
+.container{
+    /* margin: auto; */
+    margin: auto;
+   text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+.users{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px;
+    min-width: 400px;
+    margin-top: 20px ;
+}
+
+.user{
+     border: 1px solid gainsboro;
+     padding: 20px;
+     text-align: center;
+     border-radius: 10px;
+     width: 350px;
+     height: 300px;
+     background-color: rgb(218, 198, 27);
+     overflow: hidden;
+}
+ 
+p{
+    text-align: left ;
+    color: white;
+    margin: 10px;
+    font-size: 18px;
+}
+
+img{
+    width: 150px;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+button{
+     margin: auto;
+     padding: 10px 20px;
+     font-size: 20px;
+     border: none;
+     background-color: rgb(20, 17, 17);
+     color: white; 
+     border-radius: 10px;
+} 

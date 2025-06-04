@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../formValidator/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="register">
+            <h2 style="font-size: 32px;">Create your account</h2>
+            <!-- <form action="http://localhost:8000" method="Post"> -->
+            <form id = "create-account">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" id="firstName" />
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" id="lastName" />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" />
+                </div>
+
+                <div class="form-group">
+                    <label for="mobile">Mobile</label>
+                    <input type="number" name="mobile" id="mobile" />
+                </div>
+
+               <!-- <div class="form-group lastForm-group">
+                    <label for="password" id="password">Password</label>
+                     <input type="text" name="password" id="password" />
+                    <button class="showPassword">show</button>
+                </div> -->
+
+                <button class="submit" type="submit">Save</button>
+
+                <!-- <button type="reset">Reset</button> -->
+            </form>
+             <button class="get-data">Get Data</button>
+             <button class="delete-data">Delete Data</button>
+        </div>
+    </div>
+   <script src="./index.js"></script>
+</body>
+
+</html>

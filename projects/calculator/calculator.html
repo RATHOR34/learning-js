@@ -1,0 +1,89 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   // <div class="container">
+        <table>
+            <tr>
+                <td colspan ="4" class="typeInput"><input type="number"></td>
+            </tr>
+            <tr>
+                <td colspan ="4" class="resInput"><input type="number"></td>
+            </tr>
+            <tr>
+                <td><button>7</button></td>
+                <td><button>8</button></td>
+                <td><button>9</button></td>
+                <td><button>*</button></td>
+            </tr>
+            <tr>
+                <td><button>4</button></td>
+                <td><button>5</button></td>
+                <td><button>6</button></td>
+                <td><button>+</button></td>
+            </tr>
+            <tr>
+                <td><button>3</button></td>
+                <td><button>2</button></td>
+                <td><button>1</button></td>
+                <td><button>-</button></td>
+            </tr>
+        </table>
+    </div> -->
+    <!-- <input type="number" id="typeInput">
+    <button type="submit">save</button>
+    <script src="./calculator.js"></script>
+</body>
+</html> --> 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiplication Example</title>
+</head>
+<body>
+  <h2>Multiply a Number by 2</h2>
+   <input type = "number" id="typeInput">
+   <button onclick = "typeData1()" id="btn1" >4</button>
+   <button onclick = "typeData2()" id="btn2" >5</button>
+
+   <button onclick = "addition()" id="btn4" >Addition</button>
+   <button onclick = "multiply()" id="btn3" >Multiply</button>
+
+  <p id="result"></p>
+   
+  <script>
+       let typeInput = document.querySelector("input")
+       let btn1 = document.querySelector("#btn1").innerText
+       let btn2 = document.querySelector("#btn2").innerText
+     
+    function typeData1(){
+           typeInput.value = btn1     
+    }
+     
+    function typeData2(){
+           typeInput.value = btn2   
+    }
+    
+   
+    function multiply(){
+        let p = document.querySelector("#result")
+        let res = btn1 * btn2
+        p.textContent = `${btn1} and ${btn2} Multiplication is = ${res}`
+     }
+     
+     
+     function addition(){
+        let p = document.querySelector("#result")
+        let res =  Number(btn1) + Number(btn2)
+        p.textContent = `${btn1} and ${btn2} Addition is = ${res}`
+     }
+    
+    
+  </script>
+</body>
+</html> 

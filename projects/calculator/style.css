@@ -1,0 +1,10 @@
+.container{
+    margin: auto;
+}
+table{
+    margin: auto;
+    background-color: aqua;
+}
+td{
+    padding: 20px;
+}

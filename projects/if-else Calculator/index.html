@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result"></p>
+     <script>
+        let result = document.querySelector("#result")
+        let num1 = prompt("enter the first number")
+        let num2 = prompt("enter the second number")
+        let operation = prompt("enter the operator")
+        
+        if(operation == "+"){
+            
+            let add = Number(num1) + Number(num2);
+            console.log(`${num1} and ${num2} addition is = ${add}`)
+
+        }else if(operation == "-"){
+            
+            let sub = Number(num1) - Number(num2);
+            console.log(`${num1} and ${num2} subtraction is = ${sub}`)
+
+        }else if(operation == "*"){
+
+            let mul = Number(num1) * Number(num2);
+            console.log(`${num1} and ${num2} multiplication is = ${mul}`)
+
+        }else if(operation == "/"){
+
+            let division = Number(num1) / Number(num2);
+            console.log(`${num1} and ${num2} division is = ${division}`)
+
+        }else if(operation == "%"){
+
+            let remainder = Number(num1) % Number(num2);
+             console.log(`${num1} and ${num2}  is = ${remainder}}`)
+
+        }
+       
+
+
+     </script>
+     
+
+</body>
+</html>

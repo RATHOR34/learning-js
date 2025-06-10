@@ -1,4 +1,4 @@
-.container{
+/* .container{
     margin: auto;
 }
 table{
@@ -7,4 +7,10 @@ table{
 }
 td{
     padding: 20px;
+} */
+ p{
+    width: 200px;
+     
+    border: 1px solid red;
+    padding: 10px 10px;
 }

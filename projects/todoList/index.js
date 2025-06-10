@@ -1,23 +1,36 @@
 let input = document.querySelector("input")
 let saveBtn = document.querySelector("button")
 let ul = document.querySelector("ul")
-let num = 1;
-saveBtn.addEventListener("click", () => {
+let num = 0;
 
+saveBtn.addEventListener("click", () => {
+   
     if(input.value.trim() === ""){
         alert("Enter the value in input")
         return
     }
-    
+   
+      
     let li = document.createElement("li")
+     num++
     
      li.innerHTML = `${num}. ${input.value} <button class="delete">Delete</button`
-     ul.appendChild(li)
+     
+     ul.append(li)
+     
      input.value = ""
-     li.firstElementChild.addEventListener("click", ()=>{
-        li.remove()
+     
+     li.lastElementChild.addEventListener("click", ()=>{
+     li.remove()
+     
+     let count = document.querySelectorAll("li")
+     
+     if(count.length === 0){
+        num = 0
+     }
+
      })
-      num++
+
 })
 
 // let lists = []

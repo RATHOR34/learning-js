@@ -10,8 +10,6 @@ let deleteData = document.querySelector(".delete-data")
 let url = "https://683c672428a0b0f2fdc70fa3.mockapi.io/employe"
 
 
-
-
 function registerAccount(e) {
     e.preventDefault()
     let users = {

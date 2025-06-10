@@ -1,89 +1,141 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-   // <div class="container">
-        <table>
-            <tr>
-                <td colspan ="4" class="typeInput"><input type="number"></td>
-            </tr>
-            <tr>
-                <td colspan ="4" class="resInput"><input type="number"></td>
-            </tr>
-            <tr>
-                <td><button>7</button></td>
-                <td><button>8</button></td>
-                <td><button>9</button></td>
-                <td><button>*</button></td>
-            </tr>
-            <tr>
-                <td><button>4</button></td>
-                <td><button>5</button></td>
-                <td><button>6</button></td>
-                <td><button>+</button></td>
-            </tr>
-            <tr>
-                <td><button>3</button></td>
-                <td><button>2</button></td>
-                <td><button>1</button></td>
-                <td><button>-</button></td>
-            </tr>
-        </table>
-    </div> -->
-    <!-- <input type="number" id="typeInput">
-    <button type="submit">save</button>
-    <script src="./calculator.js"></script>
-</body>
-</html> --> 
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
   <title>Multiplication Example</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <style>
+      body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    #inputValue {
+      width: 100%;
+      padding: 10px;
+      margin: 0 auto 15px;
+      font-size: 20px;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      min-height: 30px;
+    }
+
+    table {
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      animation: slideIn 0.8s ease;
+    }
+
+    td {
+      padding: 10px;
+    }
+
+    button {
+      width: 60px;
+      height: 60px;
+      font-size: 20px;
+      border: none;
+      border-radius: 10px;
+      background-color: #e0e0e0;
+      transition: background-color 0.3s, transform 0.2s;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    button:hover {
+      background-color: #d1d1d1;
+      transform: scale(1.05);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
 <body>
-  <h2>Multiply a Number by 2</h2>
-   <input type = "number" id="typeInput">
-   <button onclick = "typeData1()" id="btn1" >4</button>
-   <button onclick = "typeData2()" id="btn2" >5</button>
-
-   <button onclick = "addition()" id="btn4" >Addition</button>
-   <button onclick = "multiply()" id="btn3" >Multiply</button>
-
-  <p id="result"></p>
+  
+   <h2>Calculator</h2>
+   <p id="inputValue"></p>
+   <table>
+      <tr>
+        <td><button>7</button></td>
+        <td><button>8</button></td>
+        <td><button>9</button></td>
+        <td><button>*</button></td>
+     </tr>
+     <tr>
+        <td><button>4</button></td>
+        <td><button>5</button></td>
+        <td><button>6</button></td>
+        <td><button>-</button></td>
+     </tr>
+     <tr>
+        <td><button>1</button></td>
+        <td><button>2</button></td>
+        <td><button>3</button></td>
+        <td><button>+</button></td>
+     </tr>
+    
+     <tr>
+        <td><button>.</button></td>
+        <td><button>0</button></td>
+        <td><button>/</button></td>
+        <td><button>=</button></td>
+     </tr>
+   </table>
+    
+   
+ 
    
   <script>
-       let typeInput = document.querySelector("input")
-       let btn1 = document.querySelector("#btn1").innerText
-       let btn2 = document.querySelector("#btn2").innerText
-     
-    function typeData1(){
-           typeInput.value = btn1     
-    }
-     
-    function typeData2(){
-           typeInput.value = btn2   
-    }
-    
-   
-    function multiply(){
-        let p = document.querySelector("#result")
-        let res = btn1 * btn2
-        p.textContent = `${btn1} and ${btn2} Multiplication is = ${res}`
-     }
-     
-     
-     function addition(){
-        let p = document.querySelector("#result")
-        let res =  Number(btn1) + Number(btn2)
-        p.textContent = `${btn1} and ${btn2} Addition is = ${res}`
-     }
-    
-    
+       let typeInput = document.querySelector("p")    
+       let allBtns = document.querySelectorAll("button")
+       let  randerValue = ""
+       allBtns.forEach((btn) =>{
+         
+        btn.addEventListener("click",(e)=>{
+            if(e.target.innerText == "="){
+                
+               typeInput.innerText = eval(randerValue)
+
+
+            }else{
+            
+                let val = e.target.innerText
+                randerValue += val
+                typeInput.innerText = randerValue
+            }
+         })
+       })
   </script>
 </body>
 </html> 

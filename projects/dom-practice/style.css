@@ -1,0 +1,120 @@
+ 
+    /* Global Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #8e9eab, #eef2f3);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .logo img {
+      max-width: 180px;
+      margin-bottom: 20px;
+      animation: fadeInDown 1s ease;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+      padding: 10px 20px;
+      width: 280px;
+      font-size: 1rem;
+      border: 2px solid #555;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      outline: none;
+      transition: 0.3s ease;
+    }
+
+    input[type="text"]:focus {
+      border-color: #007bff;
+      box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+    }
+
+    .notFound {
+      color: red;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    table {
+      width: 90%;
+      max-width: 800px;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      display: none;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      animation: slideIn 1.2s ease;
+      margin-bottom: 30px;
+    }
+
+    table th,
+    table td {
+      padding: 12px 20px;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
+
+    table th {
+      background-color: #007bff;
+      color: white;
+    }
+
+    table td p {
+      margin: 0;
+      font-weight: 500;
+      color: #333;
+    }
+
+    button {
+      padding: 12px 25px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      background: #28a745;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s ease;
+      box-shadow: 0 4px 14px rgba(40, 167, 69, 0.4);
+    }
+
+    button:hover {
+      background: #218838;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    } 

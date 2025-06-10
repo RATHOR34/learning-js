@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cwp results</title>
+     <link rel="icon" type="image/x-icon" href="./images/logo-cwp.png">
+   
+     <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="logo">
+        
+        <img src="images/logo-cwp.png" alt="">
+
+    </div>
+    <h2>Get Result Here</h2>
+    <input type="text" placeholder="Enter the name">
+    <p class="notFound"></p>
+    <table>
+        <tr>
+            <th>Name</th>
+            <td colspan="3">
+                <p id="name"></p>
+            </td>
+        </tr>
+
+        <tr>
+            <th>Father Name</th>
+            <td colspan="3">
+                <p id="fname"></p>
+            </td>
+        </tr>
+
+
+        <tr>
+            <th>Mother Name</th>
+            <td colspan="3">
+                <p id="mname"></p>
+            </td>
+        </tr>
+
+        <tr>
+            <th>DOB</th>
+            <td colspan="3">
+                <p id="dob"></p>
+            </td>
+        </tr>
+
+        <tr>
+            <th>Roll No</th>
+            <td colspan="3">
+                <p id="rollNo"></p>
+            </td>
+        </tr>
+
+        <tr>
+            <th colspan="2">Subject</th>
+            <th colspan="2">marks</th>
+        </tr>
+
+        <tr>
+            <td>HTML</td>
+            <td colspan="3">
+                <p id="htmlMarks"></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>CSS</td>
+            <td colspan="3">
+                <p id="cssMarks"></p>
+            </td>
+            </p>
+        </tr>
+
+        <tr>
+            <td>JAVASCRIPT</td>
+            <td colspan="3">
+                <p id="jsMarks"></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>REACT JS</td>
+            <td colspan="3">
+                <p id="reactMarks"></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>NODE JS</td>
+            <td colspan="3">
+                <p id="nodeMarks"></p>
+            </td>
+        </tr>
+
+        <tr>
+            
+            <th colspan="2">Total Marks</th>
+            <th colspan="2"><p id="totalMarks"></p></th>
+        
+        </tr>
+    </table>
+   
+    <button onclick="fetchData()">Fetch Data</button>
+    <script src="./fetchData.js"></script>
+</body>
+
+</html>

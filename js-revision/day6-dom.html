@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            background-color: green;
+        }
+
+        .onceClicked {
+            padding: 0 10px;
+            margin-bottom: 5px;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+
+        <ul>
+            <li>Home</li>
+            <li>product</li>
+            <li>contact</li>
+            <li>about</li>
+        </ul>
+
+        <!-- <div class="myChoice"></div> -->
+
+        <p><span style="display: none;">Hello chanchal.</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Aliquid, ut repellendus. Quasi dolor vitae beatae iusto ea accusantium ratione molestiae.</p>
+
+    </div>
+
+    <script>
+        let allList = document.querySelectorAll("li")
+        let para = document.querySelector("p")
+        let div = document.querySelector("div")
+        let heading = document.createElement("h2")
+
+        // console.log(para.innerHTML)
+        // console.log(para.innerText)
+        // console.log(para.textContent)
+        // para.textContent = para.textContent.toUpperCase()
+
+        heading.innerHTML = "This is our title"
+        div.appendChild(heading)
+
+
+        allList.forEach((list) => {
+            list.style.backgroundColor = "black"
+            list.style.color = "white"
+            // list.classList.remove("first")
+            list.classList.add("onceClicked")
+        })
+
+        
+            // let newArray =  Array.from(allList)                             //converting nodelist to an array
+
+            // let result =    newArray.map((list) =>{
+            //   return list.innerHTML
+            // })
+    </script>
+</body>
+
+</html>

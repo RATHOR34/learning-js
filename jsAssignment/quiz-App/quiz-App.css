@@ -13,9 +13,21 @@ body{
     padding: 50px 50px;
        border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: relative;
    
 }
-
+#timer{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    color: white;
+    background-color: green;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 5px 5px 0px 0px;
+    border-radius: 50%;
+}
 
 .options-container{
      display: flex;

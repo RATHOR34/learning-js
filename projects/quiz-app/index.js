@@ -49,6 +49,13 @@ let selectedAnswer = null;
 
 // next question
 function nextQuestion(){
+   
+  setInterval(() => {
+    let date = new Date()
+      console.log(date)
+  },  1000);
+  
+
 
   if (selectedAnswer === null) {
     alert("please select an answer!");

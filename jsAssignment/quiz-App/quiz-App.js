@@ -32,6 +32,37 @@ let questions = [
 ]
 
 
+// get name and email
+
+let allInput = document.querySelectorAll("input")
+let btn = document.querySelector(".userBtn") 
+
+btn.addEventListener("click",()=>{
+
+     let name = allInput[0].value
+     let email = allInput[1].value
+     let div = document.querySelector(".userDetail")
+
+     localStorage.setItem("name",name)
+     localStorage.setItem("email",email)
+
+     allInput[0].value = ""
+     allInput[1].value = ""
+
+     showData()
+     
+     div.style.display = "none"
+    // allInput[0].style.display = "none"
+    // allInput[1].style.display = "none"
+    // btn.style.display = "none"
+})
+function showData(){
+    // allInput.style.display = "input"
+    let allP = document.querySelectorAll("p")
+    allP[0].innerText = `Name: ${localStorage.getItem("name")}`
+    allP[1].innerText = `Email: ${localStorage.getItem("email")}`
+ 
+}
 
 // Get Dom elements
 let questionContainer = document.querySelector(".question-container")

@@ -156,7 +156,7 @@ function fetchData() {
             reactElement.textContent = array[i].reactScore
             totalMarks.textContent = array[i].htmlScore+array[i].cssScore+array[i].jsScore+array[i].nodeScore+array[i].reactScore
             btn.style.display = "none"
-            table.style.display = "table";
+            table.style.display = "table"
             notFound.style.display = "none"
             fetchName.style.display = "none"
             resultpara.style.display = "none"

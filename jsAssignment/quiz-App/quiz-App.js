@@ -33,35 +33,39 @@ let questions = [
 
 
 // get name and email
+let allInput = document.querySelectorAll("input") 
+let saveNext = document.querySelector(".saveNext")
+let quizContainer = document.querySelector(".quiz-container")
+let form = document.querySelector("form") 
 
-let allInput = document.querySelectorAll("input")
-let btn = document.querySelector(".userBtn") 
 
-btn.addEventListener("click",()=>{
-
+saveNext.addEventListener("click",(e)=>{
+     e.preventDefault()
      let name = allInput[0].value
      let email = allInput[1].value
-     let div = document.querySelector(".userDetail")
 
      localStorage.setItem("name",name)
      localStorage.setItem("email",email)
 
      allInput[0].value = ""
      allInput[1].value = ""
-
-     showData()
      
-     div.style.display = "none"
-    // allInput[0].style.display = "none"
-    // allInput[1].style.display = "none"
-    // btn.style.display = "none"
+    //  quizContainer.style.display = "quizContainer"
+
+
+    showData()
+    form.style.display = "none"
+    quizContainer.style.display ="block"
 })
+
+ 
 function showData(){
     // allInput.style.display = "input"
     let allP = document.querySelectorAll("p")
-    allP[0].innerText = `Name: ${localStorage.getItem("name")}`
-    allP[1].innerText = `Email: ${localStorage.getItem("email")}`
- 
+    
+   allP[0].innerText = `${localStorage.getItem("name")}`
+   allP[1].innerText = `${localStorage.getItem("email")}`
+//    quizContainer.style.display = "quizContainer"
 }
 
 // Get Dom elements

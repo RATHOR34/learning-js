@@ -40,7 +40,9 @@ let form = document.querySelector("form")
 
 
 saveNext.addEventListener("click",(e)=>{
+    timerStart()
      e.preventDefault()
+     
      let name = allInput[0].value
      let email = allInput[1].value
 
@@ -50,9 +52,6 @@ saveNext.addEventListener("click",(e)=>{
      allInput[0].value = ""
      allInput[1].value = ""
      
-    //  quizContainer.style.display = "quizContainer"
-
-
     showData()
     form.style.display = "none"
     quizContainer.style.display ="block"
@@ -60,12 +59,11 @@ saveNext.addEventListener("click",(e)=>{
 
  
 function showData(){
-    // allInput.style.display = "input"
+    
     let allP = document.querySelectorAll("p")
     
    allP[0].innerText = `${localStorage.getItem("name")}`
-   allP[1].innerText = `${localStorage.getItem("email")}`
-//    quizContainer.style.display = "quizContainer"
+
 }
 
 // Get Dom elements
@@ -91,7 +89,7 @@ function timerStart() {
 
     let intervalId = setInterval(() => {
         timer--
-        timerElement.innerHTML = timer
+        timerElement.innerHTML = `0:${timer}`
         console.log(timer)
 
         if (timer === 0) {
@@ -108,7 +106,7 @@ function timerStart() {
 }
 
 
-timerStart()
+// timerStart()
 
 //next question
 function nextQuestion() {

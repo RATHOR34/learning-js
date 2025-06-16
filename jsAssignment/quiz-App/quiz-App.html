@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quiz-app</title>
     <link rel="stylesheet" href="./quiz-App.css">
 </head>
 <body>
     <div class="container"> 
     <div class="userDetail">
+       
         <form action="">
+            <h1>Quiz-App</h1>
         <label for="name">Name *</label>
         <input type="text" placeholder="Enter your name" id="name">
         <label for="email">Email *</label>
@@ -18,14 +20,14 @@
         </form>
     </div>
 
-    <div>
+    <!-- <div>
         <p class="name"></p>
         <p class="email"></p>
-    </div>
+    </div> -->
 
     <div class="quiz-container">
            
-        <p id="timer"></p>
+        <h3 id="timer"></h3>
         <h1>Quiz App</h1>
         <div class="question-container">
             <div class="question-number">Question 1 of 5</div>
@@ -44,7 +46,12 @@
          </div>
 
          <div class="result">
-            <h2>Your score: <span class="score">0</span>/5</h2>
+            <h2>Thank You !</h2>
+             <div>
+                <p class="name"></p>
+                <!-- <p class="email"></p> -->
+            </div>
+            <h2>Your score is: <span class="score" color="black">0</span>/5</h2>
             <button class="restart-btn">Try Again</button>
          </div>
     </div>

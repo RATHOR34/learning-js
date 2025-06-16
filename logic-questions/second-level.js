@@ -62,7 +62,7 @@ function removeDuplicate(arr){
 
 // 4.count each different value from array--------------------------------------
 
-let array = [11,11,10,10]
+let array = [1,1,2,3,4,5]
 
 function countEachvalue(array){
     let result = {}

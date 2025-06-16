@@ -1,42 +1,62 @@
 body{
-    margin: auto;
+    /* margin: auto; */
     display: flex;
     justify-content: center;
+    color: white;
     align-items: center;    
     font-family: Arial, Helvetica, sans-serif;
 }
+h2{
+   margin-top: -15px;
+   margin-bottom: 10px;
+}
+
+p{
+    margin-bottom: 50px;
+}
 .container{
     display: flex;
+    width: 500px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 .quiz-container{
-    margin: auto;
-    background-color: rgb(218, 209, 209);
-    width: 100%;
-    margin-top: 20px;
-    padding: 30px 50px;
+    /* margin: auto; */
+    background-color: #2ab4b4;;
+    
+    width: 100%;  
+    /* margin-top: 15px; */
+    padding: 20px 50px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
     position: relative;
     display: none;
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Added shadow */
+
 }
  
 form{
-    background-color: #ddd;
+    background-color: #2ab4b4;
     width: 600px;
     height: auto;
     text-align: center;
     border-radius: 10px;
-    margin-top: 15%;
+    /* margin-top: 15%; */
+    margin: auto;
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 30px 40px;
+    /* margin-top: 40px; */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Added shadow */
 }
 input{
-    padding: 20px;
+    padding: 10px 20px;
     border: none;
     margin: 20px;
-    font-size: 20px;
+    border-radius: 10px;
+    font-size: 16px;
 }
 
 label{
@@ -44,14 +64,16 @@ label{
     padding: 10px 0  0 25px ;
 }
 .saveNext{
-    width: 35%;
-    padding: 15px;
+    
+      
+    border: none;
+     padding:  10px 15px;
     margin: 20px auto;
+    color: white;
+    cursor: pointer;
     border-radius: 10px;
-     background-color: #4CAF50;
-     border: none;
-     color: white;
-     font-size: 20px;
+    font-size: 16px;
+    background-color: green;
              
 }
 
@@ -62,10 +84,12 @@ label{
     color: white;
     background-color: green;
     width: 30px;
-    height: 30px;
+    height: 20px;
     text-align: center;
-    padding: 5px 5px 0px 0px;
+    align-items: center;
+    padding: 20px 15px;
     border-radius: 50%;
+    margin-right: 25px;
 }
 
 .options-container{
@@ -83,6 +107,7 @@ label{
     border: 1px solid #ddd;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
     transition: background 0.3s;
 }
 
@@ -97,7 +122,7 @@ h1{
 .question{
     padding: 10px 0px;
      font-weight: bold;
-     font-size: 18px;
+     font-size: 20px;
 }
 
 .next-btn,.restart-btn{
@@ -121,7 +146,7 @@ h1{
 }
 
 .score {
-    color: #4CAF50;
+    color: black;
     font-size: 24px;
 }
 

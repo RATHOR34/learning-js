@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         span{
+            display: none;
+         }
+    </style>
+</head>
+<body>
+    <p>Hello chanchal Rathor your age is <span>22</span></p>
+    <input type="number" name="" id="numberValue">
+    <button>add</button>
+     <ul> 
+        <li class="first">home</li>
+        <li >product</li>
+        <li >contact</li>
+        <li>about</li>
+        </ul>
+    <script>
+        //  let para = document.querySelector("p")
+        
+        //  let allList = document.querySelectorAll("li")     
+        //  console.log(para.innerHTML) //you will get everything in p tag
+        //  console.log(para.innerText) //you will get everything in p tag
+        //  console.log(para.textContent) //you will get everything in p tag
+
+        //  allList.forEach((list) => {
+        //           list.style.backgroundColor = "black"
+        //           list.style.color = "white"
+        //           list.style.listStyleType = "none"
+
+                //   list.classList.remove("first")
+                //   list.classList.add("onceClicked")
+                //   list.classList.replace("first", "onceClicked")
+            // })
+        //   let str = prompt("enter")
+        //   let num = Number(str)
+        //   console.log(num)
+        // let input = document.querySelector("input")
+        // let button = document.querySelector("button")
+        // button.addEventListener("click",()=>{
+            
+        //     alert(Number(input.value )+ 10)
+        //     input.value = ""
+        // })
+//     function add(){
+//     console.log("hi i will add the two numbers")
+// }
+
+
+//     function greet(add){
+//     console.log("welcome to our website") 
+//    add() 
+// }
+   
+// greet(add)
+
+// -----------------------------------------------setInterval and settimeout----------------
+
+// console.log("hiiiii")
+// setTimeout(()=>{
+    
+//     console.log("hi welcome to our website")
+
+// }, 2000)
+
+
+// let count = 0
+
+// let intervalID = setInterval(() =>{
+
+//     let date = new Date()
+//     console.log(date.toLocaleTimeString())
+
+//     count++
+//     console.log(count)
+
+//     if(count === 20){
+//         clearInterval(intervalID)
+//     }
+
+// }, 1000)
+
+//  A. ----------------------syncronous programming-----------------------(blocking - code)
+// Note: it will finish first task then go for next task.
+
+
+// console.log("start")
+
+// for(let i = 0; i < 40; i++){
+//     console.log(i)
+// }
+// console.log("end")
+
+// //B. ----------------------------------asyncronous programming---------------------(none blocking - code)
+// // Note: it allow us to execute next line.
+
+console.log("start")
+
+setTimeout(() => {
+    console.log("processing")
+}, 0)
+
+console.log("end")
+
+    </script>
+</body>
+</html>

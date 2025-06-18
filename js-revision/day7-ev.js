@@ -1,11 +1,11 @@
 // what is callback
 // note: callback is a function,which passes to another function as an argument.
 
-function add(){
+function add() {
     console.log("hi i will add the two numbers")
 }
 
-function greet(callback){
+function greet(callback) {
     console.log("welcome to our website")
     callback()
 }
@@ -17,28 +17,44 @@ greet(add)
 
 console.log("hii")
 
-setTimeout(() => {
-    
-    console.log("hi welcome to our website")
-
-}, 1000);
-console.log("hello")
-
-
 let count = 0
+let statement = setInterval(() => {
 
-let intervalId = setInterval(() => {
+    let date = new Date()
+    console.log("hello", date.toLocaleTimeString())
+    // count++
+    // if(count === 10){
+    //       clearInterval(statement)
+    // }
+}, 1);
 
-      let date = new Date()
-      console.log(date.toLocaleTimeString())
+ 
 
-      count++
-      console.log(count)
+let set = setTimeout(() => {
 
-      if(count === 20){
+    let date = new Date()
+    console.log("hn",date.toLocaleTimeString())
 
-        clearInterval(intervalId)
+}, 2000);
 
-      }
+// clearTimeout(set)
+// console.log("hello")
 
-},1000)
+
+// let count = 0
+
+// let intervalId = setInterval(() => {
+
+//       let date = new Date()
+//       console.log(date.toLocaleTimeString())
+
+//       count++
+//       console.log(count)
+
+//       if(count === 20){
+
+//         clearInterval(intervalId)
+
+//       }
+
+// },1000)
